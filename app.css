@@ -289,9 +289,10 @@ tbody::-webkit-scrollbar {
     margin: auto;
   }
   .loan-information {
-    gap: 10px;
+    gap: 20px;
     text-align: center;
     flex-direction: column;
+    width: 360px;
   }
   .loan-detail--item,
   .loan-total-title,
