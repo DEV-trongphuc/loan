@@ -85,8 +85,8 @@ h6 {
 .loan-detail > div {
   display: flex;
   width: 340px;
+  border-bottom: 0.5px dotted rgba(80, 80, 80, 0.273);
   justify-content: space-between;
-  align-items: center;
 }
 .loan-pay {
   font-size: 40px;
