@@ -68,22 +68,23 @@ h6 {
 }
 .loan-information {
   display: none;
-  gap: 150px;
   margin: 0 auto;
+  width: 1000px;
+  justify-content: space-between;
 }
 .loan-total-title {
   font-size: 15px;
 }
-.loan-total-pay,
-.loan-detail {
+.loan-information-item {
   width: 50%;
   flex-direction: column;
   gap: 10px;
   color: var(--loan-clr-text);
+  width: 360px;
 }
 .loan-detail > div {
   display: flex;
-  width: 340px;
+  width: 360px;
   border-bottom: 0.5px dotted rgba(80, 80, 80, 0.273);
   justify-content: space-between;
 }
@@ -102,8 +103,7 @@ h6 {
 }
 .loan-container-input {
   flex-wrap: wrap;
-  gap: 25px;
-  column-gap: 20px;
+  row-gap: 30px;
 }
 .loan-item {
   display: flex;
@@ -289,7 +289,6 @@ tbody::-webkit-scrollbar {
     margin: auto;
   }
   .loan-information {
-    width: 360px;
     gap: 10px;
     text-align: center;
     flex-direction: column;
