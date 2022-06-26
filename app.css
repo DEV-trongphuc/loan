@@ -52,7 +52,7 @@ h6 {
   --loan-clr-05: rgb(240, 240, 240);
 }
 /* ___________________GET GOOÔ___________________ */
-#loan-main {
+#loan_main {
   padding: 50px 0;
   width: 100%;
   height: auto;
@@ -66,7 +66,7 @@ h6 {
   justify-content: center;
   align-items: center;
 }
-.loan-information {
+.loan_information {
   display: none;
   margin: 0 auto;
   width: 1000px;
@@ -75,14 +75,14 @@ h6 {
 .loan-total-title {
   font-size: 15px;
 }
-.loan-information-item {
+.loan_information-item {
   width: 50%;
   flex-direction: column;
   gap: 10px;
   color: var(--loan-clr-text);
   width: 360px;
 }
-.loan-detail > div {
+.loan_detail > div {
   display: flex;
   width: 360px;
   border-bottom: 0.5px dotted rgba(80, 80, 80, 0.273);
@@ -98,22 +98,25 @@ h6 {
   border-radius: 5px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.362);
 }
-.loan-detail--item {
+.loan_detail--item {
   font-weight: bold;
 }
-.loan-container-input {
+.loan_container-input {
   flex-wrap: wrap;
   row-gap: 30px;
 }
-.loan-item {
+.loan_item {
   display: flex;
   flex-direction: column;
   gap: 12px 0;
   padding: 0 100px;
   min-width: 400px;
 }
-input:focus {
+.loan_item > input:focus {
   outline: 1px solid var(--loan-clr-500);
+}
+.loan_item > div {
+  display: flex;
 }
 .loan-percent {
   border: 1px solid var(--loan-clr-500);
@@ -136,12 +139,9 @@ input:focus {
   border-left: none;
   line-height: 35px;
 }
-.loan-title {
+.loan_item-title {
   color: var(--loan-clr-text);
   font-weight: bold;
-}
-.loan-cover {
-  display: flex;
 }
 .loan-number {
   position: relative;
@@ -183,7 +183,7 @@ input:focus {
 .progress-loan::-webkit-slider-thumb:active {
   cursor: grabbing;
 }
-.loan-btn {
+.loan_btn {
   cursor: pointer;
   border: none;
   background: var(--loan-clr-500);
@@ -200,7 +200,7 @@ input:focus {
   opacity: 0.9;
   transform: scale(1.008);
 }
-.loan-table {
+.loan_table {
   table-layout: fixed;
   border-collapse: collapse;
   width: 1001px;
@@ -210,24 +210,24 @@ input:focus {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.loan-table::-webkit-scrollbar {
+.loan_table::-webkit-scrollbar {
   display: none;
 }
 
-.loan-table > thead {
+.loan_table > thead {
   background-color: var(--loan-clr-500);
   color: #fff;
   box-shadow: inset 0px -1px 0px #eee, 0px 5px 5px -5px rgba(0, 0, 0, 0.1);
   position: relative;
   width: 100%;
 }
-.loan-table > thead tr {
+.loan_table > thead tr {
   display: block;
   position: relative;
 }
 
-.loan-table th,
-.loan-table td {
+.loan_table th,
+.loan_table td {
   padding: 5px;
   font-size: 12px;
   text-align: center;
@@ -236,7 +236,7 @@ input:focus {
   min-width: 200px;
 }
 
-.loan-table tbody {
+.loan_table tbody {
   display: block;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -248,8 +248,7 @@ tbody::-webkit-scrollbar {
   display: none;
 }
 @media screen and (max-width: 767px) {
-  .loan-main,
-  .loan-container-input {
+  .loan_container-input {
     gap: 12px;
   }
   .loan-number {
@@ -264,12 +263,12 @@ tbody::-webkit-scrollbar {
     width: 40px;
     font-size: 11px;
   }
-  .loan-item {
+  .loan_item {
     padding: 0;
     justify-content: center;
     align-items: center;
   }
-  .loan-title {
+  .loan_item-title {
     text-align: left;
     display: block;
     width: 100%;
@@ -279,33 +278,31 @@ tbody::-webkit-scrollbar {
   #value {
     display: none;
   }
-  .table-container {
+  .loan_table_container {
     height: 700px;
     width: 100%;
     overflow: hidden;
   }
-  .loan-table {
+  .loan_table {
     width: 361px !important;
     margin: auto;
   }
-  .loan-information {
+  .loan_information {
     gap: 20px;
     text-align: center;
     flex-direction: column;
     width: 360px;
   }
-  .loan-detail--item,
-  .loan-total-title,
-  .loan-ex,
-  .loan-detail > div {
+  .fz-12,
+  .loan_detail > div {
     font-size: 12px;
   }
   .loan-pay {
     min-width: 240px;
     font-size: 22px;
   }
-  .loan-table th,
-  .loan-table td {
+  .loan_table th,
+  .loan_table td {
     min-width: 72px;
     padding: 3px 0px;
     font-size: 8px;

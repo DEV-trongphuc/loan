@@ -66,7 +66,7 @@ time.oninput = () => {
   tp.value = time.value;
 };
 // __________________________Math On CLICK _________________________
-$(".loan-btn").addEventListener("click", () => {
+$(".loan_btn").addEventListener("click", () => {
   const i = ip.value / 12,
     totalLoan = toNum(tl.value),
     t = toNum(tp.value),
@@ -77,8 +77,8 @@ $(".loan-btn").addEventListener("click", () => {
       totalLoan / t + (totalLoan - (totalLoan / t) * (t - 1)) * (i / 100);
   if (i > 0 && totalLoan > 0 && t > 0 && totalPrice > 0) {
     tbodyHTML = "";
-    $(".loan-table").style.display = "block";
-    $(".loan-information").style.display = "flex";
+    $(".loan_table").style.display = "block";
+    $(".loan_information").style.display = "flex";
     const tbody = $("tbody");
     tbody.innerHTML = "";
     let totalInterest = (gop = loanAll = goc = lai = 0);
