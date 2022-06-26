@@ -76,7 +76,8 @@ $(".loan-btn").addEventListener("click", () => {
     lastMonth =
       totalLoan / t + (totalLoan - (totalLoan / t) * (t - 1)) * (i / 100);
   if (i > 0 && totalLoan > 0 && t > 0 && totalPrice > 0) {
-    let tableResults = (tbodyHTML = "");
+    let tableResults,
+      tbodyHTML = "";
     $(".loan-table").style.display = "block";
     $(".loan-information").style.display = "flex";
     const tbody = $("tbody");
