@@ -76,13 +76,20 @@ $(".loan-btn").addEventListener("click", () => {
     lastMonth =
       totalLoan / t + (totalLoan - (totalLoan / t) * (t - 1)) * (i / 100);
   if (i > 0 && totalLoan > 0 && t > 0 && totalPrice > 0) {
-    let tableResults,
-      tbodyHTML = "";
+    tbodyHTML = "";
     $(".loan-table").style.display = "block";
     $(".loan-information").style.display = "flex";
     const tbody = $("tbody");
     tbody.innerHTML = "";
     let totalInterest = (gop = loanAll = goc = lai = 0);
+    let tableResults = "";
+    // let tableResults = `<tr>
+    // <th>Tháng vay</th>
+    // <th>${formatOutput(totalLoan)}</th>
+    // <th></th>
+    // <th></th>
+    // <th></th>
+    //        </tr>`;
     for (let index = 1; index < t + 1; index++) {
       goc = totalLoan - (totalLoan / t) * index;
       lai = (totalLoan - (totalLoan / t) * (index - 1)) * (i / 100);
