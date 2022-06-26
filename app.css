@@ -70,7 +70,6 @@ h6 {
   display: none;
   gap: 150px;
   margin: 0 auto;
-  transition: 0.35s ease;
 }
 .loan-total-title {
   font-size: 15px;
@@ -154,7 +153,6 @@ input:focus {
   outline: none;
   border: 1px solid var(--loan-clr-100);
   font-size: 15px;
-  transition: 0.3s ease;
 }
 .loan-price {
   border-radius: 3px !important;
