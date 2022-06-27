@@ -76,20 +76,14 @@ let loanAPercent = 0;
           (g += tbodyHTML);
       (d.innerHTML = g),
         ($(".loan-interestall").innerHTML = $(".loan-interest-sum").innerHTML =
-          formatOutput(f) + " \u0111\u0332"),
-        ($(".loan-all").innerHTML = formatOutput(loanAll) + " \u0111\u0332"),
+          formatOutput(f) + " đ"),
+        ($(".loan-all").innerHTML = formatOutput(loanAll) + " đ"),
         ($(".loan-prepay").innerHTML =
-          ` (${100 - 1 * dvp.value}%)       ` +
-          formatOutput(e) +
-          " \u0111\u0332"),
-        ($(".loan-pay").innerHTML =
-          formatOutput(loanAll + e) + " \u0111\u0332"),
+          ` (${100 - 1 * dvp.value}%)       ` + formatOutput(e) + " đ"),
+        ($(".loan-pay").innerHTML = formatOutput(loanAll + e) + " đ"),
         ($(".loan-firstmonth").innerHTML =
-          formatOutput(b / c + (b - 0 * (b / c)) * (a / 100)) +
-          " \u0111\u0332"),
+          formatOutput(b / c + (b - 0 * (b / c)) * (a / 100)) + " đ"),
         ($(".loan-lastmonth").innerHTML =
-          formatOutput(b / c + (b - (b / c) * (c - 1)) * (a / 100)) +
-          " \u0111\u0332");
-    } else
-      alert("Vui l\xF2ng nh\u1EADp \u0111\u1EE7 th\xF4ng tin d\u1EF1 to\xE1n");
+          formatOutput(b / c + (b - (b / c) * (c - 1)) * (a / 100)) + " đ");
+    } else alert("Vui lòng nhập dủ thông tin dự toán");
   });
